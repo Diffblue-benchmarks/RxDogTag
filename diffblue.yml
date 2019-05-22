@@ -156,117 +156,31 @@ phases:
       # Set an upper bound on loop unwinding.
       unwind: 6
 units:
-#Target TGF: 3.0
-# - methods: 2
-# - complexity: 6
-# - construction: 1.0
-# - dependency: 0.5
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/RxDogTag$1.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/RxDogTag.java
-#Target TGF: 41.0
-# - methods: 11
-# - complexity: 78
-# - construction: 4.33333333333
-# - dependency: 4.33333333333
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/DogTagSubscriber.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/DogTagSubscriber.java
-#Target TGF: 27.0
-# - methods: 8
-# - complexity: 64
-# - construction: 3.33333333333
-# - dependency: 3.33333333333
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/DogTagCompletableObserver.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/DogTagCompletableObserver.java
-#Target TGF: 35.0
-# - methods: 9
-# - complexity: 66
-# - construction: 3.33333333333
-# - dependency: 3.83333333333
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/DogTagSingleObserver.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/DogTagSingleObserver.java
-#Target TGF: 41.0
-# - methods: 11
-# - complexity: 78
-# - construction: 4.33333333333
-# - dependency: 4.33333333333
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/DogTagMaybeObserver.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/DogTagMaybeObserver.java
-#Target TGF: 41.0
-# - methods: 11
-# - complexity: 78
-# - construction: 4.33333333333
-# - dependency: 4.33333333333
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/DogTagObserver.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/DogTagObserver.java
-#Target TGF: 37.1369047619
-# - methods: 18
-# - complexity: 261
-# - construction: 3.66666666667
-# - dependency: 1.51785714286
-  - target:
-    - dir: rxdogtag/build/classes/java/main
-      file: com/uber/rxdogtag/RxDogTag.class
-      sourceDir: rxdogtag/src/main/java
-      sourceFile: com/uber/rxdogtag/RxDogTag.java
-#Target TGF: 2.96875
-# - methods: 8
-# - complexity: 95
-# - construction: 0.3125
-# - dependency: 2.5
-  - target:
-    - dir: rxdogtag-autodispose/build/classes/java/main
-      file: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.class
-      sourceDir: rxdogtag-autodispose/src/main/java
-      sourceFile: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.java
-dependenciesOnClasspath:
--
-  source: classes
-  classFile: com/uber/rxdogtag/RxDogTag$1.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/RxDogTag$NonCheckingConsumer.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/DogTagSubscriber.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/DogTagCompletableObserver.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/DogTagSingleObserver.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/ObserverHandler.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/RxDogTag$NonCheckingPredicate.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/DogTagObserver.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/RxDogTag.class
--
-  source: classes
-  classFile: com/uber/rxdogtag/DogTagMaybeObserver.class
+# Target TGF: 0
+#  >methods=2
+#  >complexity=0
+#  >construction=0
+#  >dependency=0
+ - target:
+   - dir: rxdogtag/build/classes/java/main
+     file: com/uber/rxdogtag/RxDogTag$1.class
+     sourceDir: rxdogtag/src/main/java
+     sourceFile: com/uber/rxdogtag/RxDogTag.java
+   - dir: rxdogtag/build/classes/java/main
+     file: com/uber/rxdogtag/ObserverHandler.class
+     sourceDir: rxdogtag/src/main/java
+     sourceFile: com/uber/rxdogtag/ObserverHandler.java
+# Target TGF: 4.75
+#  >methods=8
+#  >complexity=95
+#  >construction=0.5
+#  >dependency=2.5
+ - target:
+   - dir: rxdogtag-autodispose/build/classes/java/main
+     file: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.class
+     sourceDir: rxdogtag-autodispose/src/main/java
+     sourceFile: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.java
+   - dir: rxdogtag/build/classes/java/main
+     file: com/uber/rxdogtag/ObserverHandler.class
+     sourceDir: rxdogtag/src/main/java
+     sourceFile: com/uber/rxdogtag/ObserverHandler.java
