@@ -155,32 +155,3 @@ phases:
       throw-runtime-exceptions: false
       # Set an upper bound on loop unwinding.
       unwind: 6
-units:
-# Target TGF: 0
-#  >methods=2
-#  >complexity=0
-#  >construction=0
-#  >dependency=0
- - target:
-   - dir: rxdogtag/build/classes/java/main
-     file: com/uber/rxdogtag/RxDogTag$1.class
-     sourceDir: rxdogtag/src/main/java
-     sourceFile: com/uber/rxdogtag/RxDogTag.java
-   - dir: rxdogtag/build/classes/java/main
-     file: com/uber/rxdogtag/ObserverHandler.class
-     sourceDir: rxdogtag/src/main/java
-     sourceFile: com/uber/rxdogtag/ObserverHandler.java
-# Target TGF: 4.75
-#  >methods=8
-#  >complexity=95
-#  >construction=0.5
-#  >dependency=2.5
- - target:
-   - dir: rxdogtag-autodispose/build/classes/java/main
-     file: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.class
-     sourceDir: rxdogtag-autodispose/src/main/java
-     sourceFile: com/uber/rxdogtag/autodispose/AutoDisposeObserverHandler.java
-   - dir: rxdogtag/build/classes/java/main
-     file: com/uber/rxdogtag/ObserverHandler.class
-     sourceDir: rxdogtag/src/main/java
-     sourceFile: com/uber/rxdogtag/ObserverHandler.java
