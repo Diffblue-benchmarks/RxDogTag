@@ -1,5 +1,3 @@
-buildCmd: ./gradlew assemble
-testCmd: true
 lineLength: 4096
 skipVerification: true
 cbmcArguments:
